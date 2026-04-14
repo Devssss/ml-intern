@@ -13,6 +13,12 @@ uv sync
 uv tool install -e .
 ```
 
+#### That's it. Now `ml-agent` works from any directory:
+
+```bash
+ml-agent
+```
+
 Create a `.env` file in the project root (or export these in your shell):
 
 ```bash
@@ -21,12 +27,6 @@ HF_TOKEN=<your-hugging-face-token>
 GITHUB_TOKEN=<github-personal-access-token> 
 ```
 If no `HF_TOKEN` is set, the CLI will prompt you to paste one on first launch. To get a GITHUB_TOKEN follow the tutorial [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token).
-
-#### That's it. Now `ml-agent` works from any directory:
-
-```bash
-ml-agent
-```
 
 ### Usage
 
