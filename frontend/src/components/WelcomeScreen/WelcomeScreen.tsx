@@ -271,7 +271,7 @@ export default function WelcomeScreen() {
   const joinOrgStatus: StepStatus = isOrgMember ? 'completed' : isAuthenticated ? 'active' : 'locked';
   const startStatus: StepStatus = isAuthenticated && isOrgMember ? 'active' : 'locked';
 
-  // Space URL for iframe "Open ML Agent" step
+  // Space URL for iframe "Open ML Intern" step
   const spaceHost =
     typeof window !== 'undefined'
       ? window.location.hostname.includes('.hf.space')
@@ -311,7 +311,7 @@ export default function WelcomeScreen() {
           fontSize: { xs: '1.8rem', md: '2.4rem' },
         }}
       >
-        ML Agent
+        ML Intern
       </Typography>
 
       {/* Description */}
@@ -328,7 +328,7 @@ export default function WelcomeScreen() {
           '& strong': { color: 'var(--text)', fontWeight: 600 },
         }}
       >
-        Your <strong>ML intern</strong>. It reads <strong>papers</strong>, finds <strong>datasets</strong>, trains <strong>models</strong>, and iterates until the numbers go up. Instructions in. Trained model out.
+        Your personal <strong>ML agent</strong>. It reads <strong>papers</strong>, finds <strong>datasets</strong>, trains <strong>models</strong>, and iterates until the numbers go up. Instructions in. Trained model out.
       </Typography>
 
       {/* ── Checklist ──────────────────────────────────────────── */}
@@ -370,11 +370,11 @@ export default function WelcomeScreen() {
             />
             <ChecklistStep
               stepNumber={2}
-              title="Open ML Agent"
+              title="Open ML Intern"
               description="Open the agent in a full browser tab to get started."
               status={isOrgMember ? 'active' : 'locked'}
               lockedReason="Join the organization first."
-              actionLabel="Open ML Agent"
+              actionLabel="Open ML Intern"
               actionIcon={<OpenInNewIcon sx={{ fontSize: 16 }} />}
               actionHref={spaceHost}
               isLast
